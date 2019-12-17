@@ -1,0 +1,37 @@
+
+body {
+  background: black;
+  color: white;
+}
+.lampky {
+  display: flex;
+}
+
+.lampka {
+  --c: red;
+  --d: 20px;
+  width: var(--d);
+  height: var(--d);
+  border-radius: var(--d);
+  background: var(--c);
+  
+  margin: var(--d);
+  box-shadow:
+    var(--c) 0 0 10px,
+    var(--c) 0 0 20px,
+    var(--c) 0 0 30px
+    ;
+}
+
+.lampka:nth-child(2n) {
+  --c: hotpink;
+  
+}
+.config-slider {
+  text-align: right;
+  width: 40%;
+}
+.config-slider input[type=range] {
+  vertical-align: middle;
+  margin-left: 2em;
+}
